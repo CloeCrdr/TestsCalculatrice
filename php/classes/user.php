@@ -39,8 +39,10 @@ class User {
         if(!$this->firstname){
             $errors = "Prénom invalide";
         }
-        if(!$this->name < 18){
-            $errors = "Vous êtes mineur.e";
+        if(!$this->name >= 13){
+            $errors = "Vous avez l'âge suffisant pour continuer !";
+        }  else {
+            $errors = "Vous n'avez pas l'âge requis pour continuer";
         }
     }
 }
